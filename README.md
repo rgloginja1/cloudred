@@ -8,6 +8,5 @@ A simple and powerful filesharing app written in Node JS
 * Run `npm install`
 * Run `gulp` and navigate to `http://localhost:3030`
 
-[CloudRed - Easy, fast and secure file sharing](http://i.imgur.com/JWAhcPq.png)
+![alt text](http://i.imgur.com/JWAhcPq.png "CloudRed")
 
-[img]http://i.imgur.com/JWAhcPq.png[/img]
