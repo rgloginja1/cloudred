@@ -8,5 +8,5 @@ A simple and powerful filesharing app written in Node JS
 * Run `npm install`
 * Run `gulp` and navigate to `http://localhost:3030`
 
-![alt text](http://i.imgur.com/JWAhcPq.png "CloudRed")
+![alt text](http://i.imgur.com/LBsoeJF.png "CloudRed")
 
