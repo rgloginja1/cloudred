@@ -14,9 +14,7 @@ var uploader = require('blueimp-file-upload-expressjs')(options);
 
 module.exports = function(router) {
   router.get('/uploaded', function(req, res) {
-    //uploader.get(req, res, function(obj) {
-    //  res.send(JSON.stringify(obj));
-    //});
+    
     console.log('IP');
   });
 
@@ -28,10 +26,7 @@ module.exports = function(router) {
   });
 
   router.get('/uploaded/files/:name', function(req, res) {
-    //uploader.get(req, res, function(obj) {
-    //  res.send(obj);
-    //});
-    //console.log(req.params.name);
+    
     var file = __dirname + '/uploaded/files/' + req.params.name;
 
     var filename = path.basename(file);
