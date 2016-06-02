@@ -5,7 +5,7 @@ var uploadManager = require('./uploadManager')(router);
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Imgdrop' });
+  res.render('index', { title: 'CloudRed' });
 });
 
 module.exports = router;
