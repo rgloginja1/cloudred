@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CloudRed</title>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="libs/dropzone/downloads/css/dropzone.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
+
+  <script type="text/javascript" src="libs/dropzone/downloads/dropzone.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <p>Cloud<span style="color: #da1f25;">Red</span><sup>BETA</sup></p>
+        </a>
+
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Download</a></li>
+          
+          <li><a href="#">Login</a></li>
+          
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <div id="simpleUpload" class="container">
+    <!--
+    <center>
+      <img src="img/logo1.png" class="img-responsive" style="max-height: 64px;">
+      <br/><br/>
+    </center>
+    -->
+
+   <!-- http://css-tricks.com/css3-progress-bars/ -->
+    <div class="meter">
+      <span class="roller"></span>
+    </div>
+
+    <div id="dropzone">
+      <form action="/upload" class="dropzone" id="my-dropzone">
+          <center>
+            <img src="img/logo1.png" class="img-responsive" style="max-height: 128px;">
+            <br/><br/>
+            <h3>Drag &amp; Drop Files Here To Share</h3><br/>
+            <h5>Files are available for two weeks. And it's <strong>FREE!</strong></h5>
+          </center>
+      </form>
+    </div>
+    
+    <br/>
+      <div id="uploaded" class="well" hidden></div>
+    <br/>
+    <center>
+      <h4>Quickly share files in seconds!</h4>
+      <p class="text-muted">
+        Upload your files and instantly get a link to share, or send via email.
+      </p>
+    </center>
+
+    
+    <!--
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well" id="uploaded">
+
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="well">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="well">
+        </div>
+      </div>
+
+    </div>
+    -->
+    <!-- Also checkout BS example : http://www.dropzonejs.com/bootstrap.html -->
+
+  </div>
+  
+
+</body>
+
+</html>
