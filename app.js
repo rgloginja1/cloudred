@@ -148,10 +148,14 @@ app.get('/uploaded', function(req, res) {
     if(res.locals.login == true) { 
         uploader.post(req, res, function(obj) {
           res.send(JSON.stringify(obj));
+          //console.log(obj.files[0].name);
+          //console.log(res.params);
         });
     } else { 
         uploader.post(req, res, function(obj) {
           res.send(JSON.stringify(obj));
+          //console.log(obj.files[0].name);
+          //console.log(res.params);
         });
     }
 
@@ -161,7 +165,7 @@ app.get('/uploaded', function(req, res) {
   app.get('/uploaded/files/:name', function(req, res) {
     
     var file = __dirname + '/uploaded/files/' + req.params.name;
-
+    //console.log(file);
     var filename = path.basename(file);
     var mimetype = mime.lookup(file);
 

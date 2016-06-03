@@ -16,8 +16,8 @@ Dropzone.options.myDropzone = {
           type: 'image/jpeg'
         };
 
-        self.options.addedfile.call(self, mockFile);
-        self.options.thumbnail.call(self, mockFile, files[i].url);
+        //self.options.addedfile.call(self, mockFile);
+        //self.options.thumbnail.call(self, mockFile, files[i].url);
 
       };
 
@@ -28,9 +28,14 @@ Dropzone.options.myDropzone = {
     //New file added
     self.on("addedfile", function(file) {
       console.log('new file added ', file);
-      //$('#uploaded').show();
-      //$('#uploaded').html('<center><a href="/uploaded/files/'+file.name+'">Click To Download File</a><br/><small>Or share it with others...</small><br/><i class="ion-social-facebook"></i></center>');
-      //$('#uploaded').html('<center><h5>Share this upload...</h5><hr/><i class="ion-social-facebook" style="font-size: 48px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="ion-social-twitter" style="font-size: 48px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;</center>');
+      $('#uploaded').show();
+      if(file.type == "image/jpeg") {
+        $('#uploaded').append('<div class="col-md-4 text-center well"><center><img src="/uploaded/files/'+file.name+'" class="img-responsive " style="max-height: 128px;"/></center></p><p><small>'+file.name+'</small></p><div class="row"><div class="col-xs-2"><i class="ion-social-facebook" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-social-twitter" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-social-googleplus" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-email" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-edit" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-wand" style="font-size: 14px;"></i></div></div>');
+      } else if (file.type == "image/png") {
+         $('#uploaded').append('<div class="col-md-4 text-center well"><center><img src="/uploaded/files/'+file.name+'" class="img-responsive " style="max-height: 128px;"/></center></p><p><small>'+file.name+'</small></p><div class="row"><div class="col-xs-2"><i class="ion-social-facebook" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-social-twitter" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-social-googleplus" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-email" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-edit" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-wand" style="font-size: 14px;"></i></div></div>');
+      } else {
+        $('#uploaded').append('<div class="col-md-4 text-center well"><center><img src="/img/logo1.png" class="img-responsive" style="max-height: 128px;"/></center></p><p><small>'+file.name+'</small></p><div class="row"><div class="col-xs-2"><i class="ion-social-facebook" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-social-twitter" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-social-googleplus" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-email" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-edit" style="font-size: 14px;"></i></div><div class="col-xs-2"><i class="ion-wand" style="font-size: 14px;"></i></div></div>');
+      }
       
     });
 

@@ -6,13 +6,19 @@
 
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="libs/dropzone/downloads/css/dropzone.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
-
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="libs/dropzone/downloads/dropzone.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 
+  <style type="text/css">
+    [class*="col-"] {
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+  </style>
 </head>
 
 <body>
@@ -52,41 +58,11 @@
     </div>
     
     <br/>
-      <div id="uploaded" class="well" hidden></div>
+      <div id="uploaded" class="row row-fluid" hidden></div>
     <br/>
-    <!--
-    <center>
-      <h4>Quickly share files in seconds!</h4>
-      <p class="text-muted">
-        Upload your files and instantly get a link to share, or send via email.
-      </p>
-    </center>
-    -->
     
-    <!--
-    <div class="row">
-      <div class="col-md-4">
-        <div class="well" id="uploaded">
-
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="well">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="well">
-        </div>
-      </div>
-
-    </div>
-    -->
-    <!-- Also checkout BS example : http://www.dropzonejs.com/bootstrap.html -->
-
   </div>
-
+    
 
 </body>
 
